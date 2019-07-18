@@ -20,6 +20,10 @@ To teach myself containerization (Docker) and Kubernetes deployments. I chose Lo
 
 ## Setup
 
+### Docker Setup
+
+1. Start Docker `docker-machine start default && docker-machine env && @FOR /f "tokens=*" %i IN ('docker-machine env') DO @%i`
+
 ### Frontend
 
 Build Docker image: `cd frontend-app && docker build . -t ${your_dockerhub_username_here}/logodot-frontend`
