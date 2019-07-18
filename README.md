@@ -20,4 +20,12 @@ To teach myself containerization (Docker) and Kubernetes deployments. I chose Lo
 
 ## Setup
 
-Coming soon
+### Frontend
+
+Build Docker image: `cd frontend-app && docker build . -t ${your_dockerhub_username_here}/logodot-frontend`
+Push to Dockerhub: `docker push ${your_dockerhub_username_here}/logodot-frontend`
+
+### Generator
+
+Build Docker image: `cd logo-generator && docker build . -t ${your_dockerhub_username_here}/logodot-generator`
+Push to Dockerhub: `docker push ${your_dockerhub_username_here}/logodot-generator`
